@@ -28,12 +28,10 @@ const LeftSidebar = () => {
     <nav className="leftsidebar">
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
-          <img
-            src="/assets/images/logo.svg"
-            alt="logo"
-            width={170}
-            height={36}
-          />
+          <div className="flex flex-row items-center gap-2">
+            <img src="/assets/icons/favicon.ico" alt="logo" />
+            <p className="body-bold">Sociogram</p>
+          </div>
         </Link>
 
         {isLoading || !user.email ? (
